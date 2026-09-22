@@ -163,8 +163,8 @@ textarea.field{min-height:120px;resize:vertical}
 .xp li.open .more{grid-template-rows:1fr}
 .xp .more > div{overflow:hidden}
 .xp .more p{margin:0 0 18px;max-width:60ch;font-size:16px}
-.xp .posters{display:flex;gap:10px;margin:0 0 20px}
-.xp .posters img{height:120px;width:auto;border-radius:3px}
+.xp .posters{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 20px}
+.xp .posters img{height:120px;width:auto;max-width:100%;object-fit:cover;border-radius:3px}
 .xp .plus{display:inline-block;margin-left:10px;transition:transform .3s;color:var(--orange)}
 .xp li.open .plus{transform:rotate(45deg)}
 .edu{margin:18px 0 22px}
@@ -175,7 +175,7 @@ textarea.field{min-height:120px;resize:vertical}
 
 /* contact */
 .contact{padding-block:120px 60px;text-align:center}
-.big{font-family:var(--serif);font-size:clamp(76px,17vw,270px);line-height:.9;margin:0;letter-spacing:-2px;display:inline-block}
+.big{font-family:var(--serif);font-size:clamp(44px,15vw,240px);line-height:.9;margin:0;letter-spacing:-2px;display:inline-block;white-space:nowrap}
 .big a{text-decoration:none}
 .big .ch{display:inline-block;transition:transform .35s cubic-bezier(.3,1.8,.5,1),color .25s}
 .big .ch:hover{transform:translateY(-14%) rotate(var(--rot,-6deg))}
